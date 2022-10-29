@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: hsl(216, 12%, 8%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Overpass', sans-serif;
+}
+
+.container{
+    background: linear-gradient(315deg, rgba(31,38,46,1) 0%, rgba(37,45,55,1) 100%);
+    width: 80%;
+    min-height: 40%;
+    border-radius: 1rem;
+    padding: 5%;
+}
+
+.home{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.icon{
+    background-color: hsl(213, 19%, 20%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    font-size: 1.4rem;
+    color: hsl(0, 0%, 100%);
+}
+
+.text{
+    color: hsl(217, 12%, 63%);
+    font-size: 15px;
+}
+
+.ratings{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.rating__el{
+    background-color: hsl(213, 19%, 20%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsl(216, 12%, 54%);
+}
+
+.rating__el:hover{
+    background-color: hsl(217, 12%, 63%);
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+.rating__el:active{
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+.submit{
+    background-color: hsl(25, 97%, 53%);
+    border: none;
+    border-radius: 1.5rem;
+    color: hsl(0, 0%, 100%);
+    width: 100%;
+    height: 40px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.submit:hover{
+    background-color: hsl(0, 0%, 100%) ;
+    color: hsl(25, 97%, 53%);
+}
+
+.thanks{
+    display: none;
+}
+
+.attribution{
+    margin: 10%;
+    color: hsl(217, 12%, 63%);
+    font-size: .8rem;
+}
+
+a{
+    text-decoration: none;
+    color: hsl(25, 97%, 53%);
+}
