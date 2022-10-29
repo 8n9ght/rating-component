@@ -8,8 +8,6 @@ const rating = document.querySelector(".selected__rating");
 const home = document.querySelector(".home");
 const thanks = document.querySelector(".thanks");
 
-console.log(ratingSelect);
-
 for (let i = 0; i < ratingSelect.length; i++) {
   ratingSelect[i].addEventListener("click", (e) => {
     if (ratings.length < 1) {
@@ -21,7 +19,7 @@ for (let i = 0; i < ratingSelect.length; i++) {
     if (ratings.length > 0) {
       submit.addEventListener("click", () => {
         home.style.display = "none";
-        thanks.style.display = "block";
+        thanks.style.display = "flex";
         rating.innerHTML += ratingSelect[i].innerHTML
       });
     }
