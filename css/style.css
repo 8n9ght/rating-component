@@ -3,6 +3,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html{
@@ -129,7 +130,7 @@ body{
 }
 
 .attribution{
-    margin: 10%;
+    margin: 3rem 0 0;
     color: hsl(217, 12%, 63%);
     font-size: .8rem;
 }
@@ -137,4 +138,13 @@ body{
 a{
     text-decoration: none;
     color: hsl(25, 97%, 53%);
+}
+
+@media screen and (min-width: 1440px) {
+    .container{
+        width: 30%;
+        min-height: 40%;
+        border-radius: 1rem;
+        padding: 3%;
+    }
 }
