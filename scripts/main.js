@@ -16,11 +16,14 @@ for (let i = 0; i < ratingSelect.length; i++) {
       e.target.style.color = white;
     }
 
+    console.log(ratings);
+
     if (ratings.length > 0) {
       submit.addEventListener("click", () => {
         home.style.display = "none";
         thanks.style.display = "flex";
-        rating.innerHTML += ratingSelect[i].innerHTML
+        console.log(ratings);
+        rating.innerHTML = ratings;
       });
     }
   });
