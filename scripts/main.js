@@ -8,21 +8,24 @@ const rating = document.querySelector(".selected__rating");
 const home = document.querySelector(".home");
 const thanks = document.querySelector(".thanks");
 
+let prevBtn = null;
+
 for (let i = 0; i < ratingSelect.length; i++) {
   ratingSelect[i].addEventListener("click", (e) => {
+    ratings = []
     if (ratings.length < 1) {
       ratings.push(ratingSelect[i].innerHTML);
-      e.target.style.backgroundColor = orange;
-      e.target.style.color = white;
+      e.target.classList.add('active');
+      if(prevBtn !== null){
+        prevBtn.classList.remove('active');
+      }
+      prevBtn = e.target;
     }
-
-    console.log(ratings);
 
     if (ratings.length > 0) {
       submit.addEventListener("click", () => {
         home.style.display = "none";
         thanks.style.display = "flex";
-        console.log(ratings);
         rating.innerHTML = ratings;
       });
     }
