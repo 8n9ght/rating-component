@@ -83,7 +83,11 @@ body{
 .rating__el:active{
     background-color: hsl(25, 97%, 53%);
     color: hsl(0, 0%, 100%);
-    cursor: pointer;
+}
+
+.active{
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
 }
 
 .submit{
